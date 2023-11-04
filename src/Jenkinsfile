@@ -1,0 +1,12 @@
+@Library('shared-library') _
+pipeline{
+
+    agent any
+    stages{
+        stage("Console Output"){
+            steps {
+                helloWorld(name:"Ritesh", post:"DevOps Engg")
+            }
+        }
+}
+}
