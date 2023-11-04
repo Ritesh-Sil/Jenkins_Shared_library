@@ -1,3 +1,3 @@
-def call(){
-    sh "echo hello to the world of Jenkins"
+def call(Map config=[:]){
+    sh "echo hello ${config.name} to the world of Jenkins as a ${config.post}"
 }
